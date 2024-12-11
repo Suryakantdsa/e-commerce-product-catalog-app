@@ -13,10 +13,10 @@ const Navbar = () => {
     [dispatch]
   );
   return (
-    <div className="min-w-full flex p-4 justify-between sm:border-2 md:px-12 lg:px-44 sm:shadow-md sticky top-0 bg-white bg-transparent">
+    <div className=" sm:px-28 md:44 w-full flex p-4 justify-between  sm:shadow-md fixed top-0 bg-white bg-transparent dark:bg-slate-950 dark:text-white z-10">
       <div className="flex justify-between items-center gap-x-2">
         <Store />
-        <h1 className="font-bold text-xs sm:text-xl"> Wingman cart</h1>
+        <h1 className="font-bold text-xs sm:text-xl pr-1"> Wingman cart</h1>
       </div>
       <div className="hidden justify-between items-center gap-x-1 h-1/2 font-semibold lg:flex ">
         <p>Category</p>
@@ -32,7 +32,7 @@ const Navbar = () => {
         <input
           type="text"
           placeholder="🔍 search for.."
-          className="px-4 py-1 rounded-lg outline-none border-none bg-gray-200"
+          className=" px-2 py-1 rounded-lg outline-none border-none text-black dark:text-white bg-gray-200 dark:bg-slate-600"
           onChange={handleSearch}
         />
         <div className="flex justify-between items-center gap-x-1 h-1/2 font-semibold">

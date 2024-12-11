@@ -9,6 +9,7 @@ import { fetchProductsData } from "./store/slices/productsSlice";
 import { AppDispatch } from "./store";
 import FallBack from "./components/FallBack";
 import Footer from "./components/Footer";
+import ToggleComp from "./components/ToggleComp";
 
 function App() {
   const dispatch = useDispatch<AppDispatch>();
@@ -16,14 +17,16 @@ function App() {
     dispatch(fetchProductsData());
   }, [dispatch]);
   return (
-    <div className="w-screen  ">
-      <Navbar />
-      <Hero />
-      <FilterBar />
-      <ProductCatalog />
-      <FallBack />
-      <Footer />
-    </div>
+    <ToggleComp>
+      <div className="w-screen">
+        <Navbar />
+        <Hero />
+        <FilterBar />
+        <ProductCatalog />
+        <FallBack />
+        <Footer />
+      </div>
+    </ToggleComp>
   );
 }
 

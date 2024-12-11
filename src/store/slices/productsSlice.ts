@@ -18,12 +18,12 @@ const productsSlice = createSlice({
   reducers: {
     setSearchedRes(state, action: PayloadAction<string>) {
       state.searchTerm = action.payload;
-      state.filteredProducts = state.products.filter((product) => {
-        product.title.toLowerCase().includes(state.searchTerm.toLowerCase());
-      });
+      state.filteredProducts = state.products.filter((product) =>
+        product.title.toLowerCase().includes(state.searchTerm.toLowerCase())
+      );
     },
     setFilterRes(state, action: PayloadAction<Product[]>) {
-      state.filteredProducts = action.payload;
+      state.products = action.payload;
     },
   },
   extraReducers: (builder) => {

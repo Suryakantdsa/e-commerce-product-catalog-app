@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
-    <div className="w-[400px] sm:w-full px-4 sm:px-0 ">
-      <div className="  sm:mx-20 md:mx-36 lg:mx-44 bg-[#ECC66B] h-[200px] md:h-[220px] lg:h-[250px] mt-4 flex justify-center items-center rounded-xl">
+    <div className="sm:px-28 md:44 w-[380px] sm:w-full px-4 mt-20  ">
+      <div className="   bg-[#ECC66B] h-[200px] md:h-[220px] lg:h-[250px] mt-4 flex justify-center items-center rounded-xl">
         <div className=" px-16 w-full lg:w-1/2 h-full flex justify-center items-start lg:items-start flex-col ">
           <h1 className=" text-2xl lg:text-4xl text-start font-bold">
             Grab Upto 50% off on all selected product

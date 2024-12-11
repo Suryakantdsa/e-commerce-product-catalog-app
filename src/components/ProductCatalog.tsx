@@ -15,9 +15,11 @@ const ProductCatalog: React.FC = () => {
     );
   }, [products, searchTerm]);
   return (
-    <div className="w-[400px] sm:w-full ">
-      <div className="sm:px-44 px-4 flex flex-col justify-center border ">
-        <h1 className="text-2xl pt-8 pb-4 font-bold">Trending Product !</h1>
+    <div className="sm:px-28 md:44  w-[380px] sm:w-full ">
+      <div className="flex flex-col justify-center px-4 ">
+        <h1 className="text-2xl pt-8 pb-4 font-bold dark:text-white">
+          Trending Product !
+        </h1>
         <div className="flex justify-center sm:justify-between flex-row flex-wrap gap-y-16 w-full ">
           {filteredProducts.length ? (
             filteredProducts.map((product) => (
