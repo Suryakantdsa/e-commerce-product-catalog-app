@@ -1,7 +1,7 @@
 const Hero = () => {
   return (
     <div className="w-full">
-      <div className="mx-44 bg-[#ECC66B] h-[300px] mt-4 flex justify-center items-center rounded-xl">
+      <div className="mx-44 bg-[#ECC66B] h-[250px] mt-4 flex justify-center items-center rounded-xl">
         <div className="w-1/2 h-full flex justify-center items-start flex-col px-16">
           <h1 className="text-4xl text-start  font-bold">
             Grab Upto 50% off on all selected product

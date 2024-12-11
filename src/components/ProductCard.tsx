@@ -1,5 +1,5 @@
 import React from "react";
-import { Product } from "../interfaces/Products_GET";
+import { Product } from "../interfaces/AppInterface";
 
 const ProductCard: React.FC<Product> = ({ title, price, image, rating }) => {
   return (
