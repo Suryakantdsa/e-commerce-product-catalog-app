@@ -1,50 +1,50 @@
-# React + TypeScript + Vite
+# E-commerce Product Catalog App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is an e-commerce product catalog app built with **React** and **Redux Toolkit**. It fetches product data from the **FakeStoreAPI** and allows users to view, search, and filter products.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- View products with images, titles, prices, and ratings.
+- Search products by name.
+- Filter products by price (High to Low, Low to High).
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Make sure you have the following installed:
 
-- Configure the top-level `parserOptions` property like this:
+- [npm](https://www.npmjs.com/)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Run the App Locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Suryakantdsa/e-commerce-product-catalog-app.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd e-commerce-product-catalog-app
+npm install
 ```
+
+### 3. Start the app
+
+```bash
+npm start
+```
+
+The app will be available at http://localhost:3000.
+
+## Deployed App
+
+You can access the deployed app at: https://e-commerce-product-catalog-app-j62b.vercel.app/
+
+# Technologies Used
+
+- React (for building the user interface)
+- Redux Toolkit (for state management)
+- Axios (for making API calls)
+- FakeStoreAPI (for fetching product data)
+- Tailwind CSS
