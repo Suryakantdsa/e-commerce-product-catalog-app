@@ -13,35 +13,35 @@ const Navbar = () => {
     [dispatch]
   );
   return (
-    <div className="w-full  flex p-4 justify-between px-44 border-2 shadow-md sticky top-0 bg-white bg-transparent">
+    <div className="min-w-full flex p-4 justify-between sm:border-2 md:px-12 lg:px-44 sm:shadow-md sticky top-0 bg-white bg-transparent">
       <div className="flex justify-between items-center gap-x-2">
         <Store />
-        <h1 className="font-bold text-xl"> Wingman cart</h1>
+        <h1 className="font-bold text-xs sm:text-xl"> Wingman cart</h1>
       </div>
-      <div className="flex justify-between items-center gap-x-1 h-1/2 font-semibold">
+      <div className="hidden justify-between items-center gap-x-1 h-1/2 font-semibold lg:flex ">
         <p>Category</p>
         <ChevronDown />
       </div>
-      <div className="flex justify-between items-center gap-x-1 h-1/2 font-semibold">
+      <div className="hidden justify-between items-center gap-x-1 h-1/2 font-semibold lg:flex ">
         <p>Deals</p>
       </div>
-      <div className="flex justify-between items-center gap-x-1 h-1/2 font-semibold">
+      <div className="hidden justify-between items-center gap-x-1 h-1/2 font-semibold lg:flex ">
         <p>What's new</p>
       </div>
       <div className="flex justify-between items-center gap-x-5">
         <input
           type="text"
-          placeholder="🔍 searh for.."
+          placeholder="🔍 search for.."
           className="px-4 py-1 rounded-lg outline-none border-none bg-gray-200"
           onChange={handleSearch}
         />
         <div className="flex justify-between items-center gap-x-1 h-1/2 font-semibold">
           <ShoppingCart />
-          <p>Cart</p>
+          <p className="hidden md:block">Cart</p>
         </div>
         <div className="flex justify-between items-center gap-x-1 h-1/2 font-semibold">
           <UserRound />
-          <p>Account</p>
+          <p className="hidden md:block">Account</p>
         </div>
       </div>
     </div>
